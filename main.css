@@ -1,0 +1,372 @@
+/*overall layout*/
+html {
+  	position: relative;
+  	min-height: 100%;
+}
+body {
+  	/* Margin bottom by footer height */  	
+	background: #e5edf5 url('assets/img/bg.png') no-repeat fixed center top;	
+	margin-bottom: 250px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+.container{
+	max-width:1355px;
+}
+
+
+.canvass{
+	position:relative;
+}
+
+.decoration{
+	position:absolute;
+}
+
+.decoration.santa{
+	min-height:485px;
+	background: url('assets/img/decor1.png') no-repeat right top;
+	right:0;
+	width:100%;
+	z-index:2;
+}
+.decoration.logo{
+	min-height:363px;
+	background: url('assets/img/md-logo.png') no-repeat left 62px;
+	right:0;
+	width:100%;
+	z-index:2;
+}
+.main{
+	background: url('assets/img/topbar.png') repeat-x center top;
+	min-height:63px;
+	z-index:10;
+	position:relative;	
+	overflow:hidden;
+}
+
+.app-title {
+	background: url('assets/img/green-ribbon.png') no-repeat center top;
+	min-height: 126px;
+	max-width: 430px;
+	margin: 38px auto 0;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.app-body {
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+.app-lead {
+	margin: 0 5px;
+	color: #007c5a;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.green-form {
+	background: #8eb8a3;
+	border-radius: 0.50rem;
+	padding: 10px;
+	color: #fff;
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25);
+	margin-bottom: 15px;
+}
+.instructions{
+	text-align: center;
+}
+.green-form p{
+	line-height:120%;
+	font-size:14px;
+}
+p.lead{
+	font-weight:bold;
+	font-size: 18px;
+	margin-bottom:10px;
+	line-height: 18px;
+}
+
+.fa-1_2x{
+	font-size:1.5em;
+}
+
+.semi-round .input-group-addon {
+	border-top-left-radius: 0.8rem;
+	border-bottom-left-radius: 0.8rem;
+	color: #a7a7a7;
+}
+
+.input-group.semi-round .form-control {
+	border-top-right-radius: 0.8rem;
+	border-bottom-right-radius: 0.8rem;
+	padding-left: 0;
+}
+
+body:nth-of-type(1) input[type="checkbox"] { display: none; }
+body:nth-of-type(1) input[type="checkbox"] + label::before {
+	content: "\00a0";
+	background: url('assets/img/checkbox-bg.png') no-repeat center center;
+	background-size: cover;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 30px;
+	margin-right: 10px;
+	padding: 0 0 0 0px;
+	text-align: center;
+	font-weight: bold;
+	color: #4e9dd6;
+}
+
+.final-box a{
+	color:#007c5a;
+}
+
+
+body:nth-of-type(1) input[type="checkbox"]:checked + label:before {
+    content: "\002714"; /* character: "times" symbol (and "x") */
+}
+
+.app-check-label {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.app-check-label span {
+	display: inline-block;
+	/* margin-left: 40px; */
+	top: 0;
+	position: absolute;
+	line-height: 15px;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+a{
+	color:#6abaad;
+	text-decoration:underline;
+}
+
+.btn-step {
+	font-size: 30px;
+	color: #fff;
+	background: #4e9dd6;
+	padding: 15px 100px;
+	font-weight: bold;
+	border-radius: 3rem;
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25);
+	margin-bottom: 20px;
+}
+
+.btn-step.md{
+	padding:10px 20px;
+	font-weight:bold;
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #ecfefe;
+}
+
+.footer a {
+	font-weight: bold;
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 60px;
+}
+
+.before-footer {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	background: url('assets/img/foot-bg.png') no-repeat center 13px;
+	bottom: 0;
+	/* top: 0; */
+}
+.back-section {
+	position: absolute;
+	z-index: 15;
+}
+
+.btn-back {
+	background: #7f101f url('assets/img/back-arrow.png') no-repeat 10px center;
+	margin: 12px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #cc253b;
+	padding-left: 30px;
+	line-height: 20px;
+}
+
+.btn{cursor:pointer;}
+
+.green-box{
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25);	
+	border-radius: 0.80rem;
+	border: 4px solid #01796f;	
+	padding:5px 0;
+	background:#fff;
+}
+
+.green-box .input-group-addon {
+	border:none;
+}
+
+.green-box .form-control {	
+	border:none;
+}
+
+.green-text {
+	text-align: center;
+	color: #007c5a;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.step{position:relative; margin-bottom:25px;}
+.step::before {
+	content: " ";
+	width: 100%;
+	height: 84px;
+	display: block;	
+	z-index: 15;
+	position: absolute;
+	top: 71px;
+}
+.step-1::before{ background: url('assets/img/step-1.png') no-repeat center bottom;}
+.step-2::before{ background: url('assets/img/step-2.png') no-repeat center bottom;}
+.step-3::before{ background: url('assets/img/step-3.png') no-repeat center bottom;}
+.step-4::before{ background: url('assets/img/step-4.png') no-repeat center bottom;}
+
+.no-form {
+	margin: 0 15px;
+}
+
+.suits-bg {
+	background: url('assets/img/suits-bg.png') no-repeat center top;	
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+.btn-select {
+	font-size: 27px;
+	color: #fff;
+	background: #4e9dd6;
+	padding: 15px 15px;
+	font-weight: bold;
+	border-radius: 3rem;
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25); 
+	margin-bottom: 20px;
+}
+
+.select-container {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	min-height: 325px;
+}
+
+.select-container .selection{
+	position:absolute;
+	top: 0;
+	height: 100%;
+	padding-top:240px;
+	width:175px;
+	cursor: pointer;
+}
+
+.selection.select-1 {
+	background: url('assets/img/suits.png') no-repeat 34px top;
+	left:33px;	
+}
+
+.selection.select-2 {
+	background: url('assets/img/suits.png') no-repeat -121px top;
+	right: 37px;
+}
+
+.selection.select-1:hover {
+	background: url('assets/img/suits-selected.png') no-repeat 34px top;	
+}
+
+.selection.select-2:hover {
+	background: url('assets/img/suits-selected.png') no-repeat -121px top;	
+}
+
+.photo-box {
+	background: url('assets/img/photobox.png') no-repeat center top;
+	min-height: 161px;
+	max-width: 160px;
+	display: inline-block;
+	width: 160px;
+	cursor: pointer;
+	box-shadow: 0 15px 0 rgba(0,0,0,0.25);
+	border-radius: 0.8rem;
+	margin-bottom: 20px;
+}
+
+.muted-green{
+	color: #6abaad;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn-outline-green {
+	font-size: 30px;
+	color: #6abaad;
+	background: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	border-radius: 3rem;	
+	margin-bottom: 20px;
+	border:2px solid #6abaad;
+}
+
+a.btn{
+	text-decoration: none;
+}
+
+.guide-box{
+	position:relative;
+	text-align: center;
+}
+
+.guide{
+	width: 270px;
+	height: 394px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.guide:hover{
+	background-position:-274px bottom;
+}
+
+.guide.guide-1{background-image: url('assets/img/helper-george.png');}
+.guide.guide-2{background-image: url('assets/img/helper-sparkles.png');}
+.guide.guide-3{background-image: url('assets/img/helper-flash.png');}
+
+.guide-box .btn-step {
+	position: absolute;
+	top: 0;
+	left: 14px;
+	/* margin: 0 auto; */
+	/* display: block; */
+}
