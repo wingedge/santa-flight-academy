@@ -440,3 +440,144 @@ a.btn{
 
 .edit-suits-2.active{	background-position:right top;}
 .edit-suits-1.active{	background-position:left top;}
+
+.page-instructions{
+	color:#007c5a;
+	font-size:18px;
+}
+
+.bg-green{background-color:#007c5a;}
+.text-green{color:#007c5a;}
+
+.ubadge-item {
+	padding: 5px;
+	background-color: #007c5a;
+	border-radius: 0.6rem;
+	color: #fff;
+	font-size: 16px;
+	min-height: 80px;
+	overflow: hidden;
+	position:relative;
+	margin-bottom:5px;
+}
+
+.ubadge-item strong{
+	font-size:18px;
+}
+
+.ubadge-picture {
+	width: 55px;
+	height:70px;
+	overflow: hidden;
+	position:absolute;	
+	left:5px;
+	top:5px;
+}
+
+.ubadge-picture img{
+	position:absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: auto;
+}
+
+.ubadge-info {
+	vertical-align: middle;
+	padding-left: 10px;
+	min-width:320px;
+	max-width:320px;
+	position: absolute;
+	left: 65px;
+	top:5px;
+	margin:10px 0;
+}
+
+.ubadge-action {
+	position: absolute;
+	right: 10px;	
+	color: #fff;
+	margin: 0px 0;
+	width: 30px;
+}
+
+.ubadge-action a{color:#fff;}
+
+.red-box{
+	background-color:#a11528;
+	padding:20px 10px;
+	border-radius: 1rem;
+	color: #fff;
+	text-align:center;
+}
+
+.btn-white {
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 15px 35px;
+	font-size: 18px;
+	border-radius: 50px;
+}
+
+.create-badge {
+	background-image: url('assets/img/create-badge-bg.png');
+	width: 100%;
+	height: 179px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #fdf6e2;
+	position: relative;
+}
+
+.create-badge a {
+	color: #fdf6e2;
+	text-decoration: none;
+	position: absolute;
+	right: 23px;
+	top: 23px;
+	font-size: 22px;
+}
+
+.elfmodal .modal-body {
+	background-color: #007c5a;
+	padding: 20px;
+	border: 10px solid #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	color:#fff;
+	font-size:30px;
+	text-align: center;
+}
+
+.elfmodal .modal-content {
+	border-radius: 20px;
+	overflow: hidden;
+	color: #fff;
+	max-width: 340px;
+	margin: 0 auto;
+	box-shadow: 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.elfmodal .modal-text {
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 50px;
+}
+
+.elfmodal .btn-step {
+	padding: 10px 30px;
+	box-shadow: 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+.btn-step.white {
+	background: none;
+	border: 2px solid #fff;
+	box-shadow: none;
+}
+
+.elfhead {
+	background: url(assets/img/modal-bg.png) no-repeat center bottom;
+	width: 100%;
+	height: 120px;
+}
