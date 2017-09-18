@@ -197,7 +197,7 @@ a{
 }
 .back-section {
 	position: absolute;
-	z-index: 15;
+	z-index: 50;
 }
 
 .btn-back {

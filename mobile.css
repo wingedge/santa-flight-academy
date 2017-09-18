@@ -1,0 +1,154 @@
+/*Mobile Version*/
+@media only screen and (max-width : 768px) {
+	.container {
+		max-width: 100%;
+		padding:0;
+		margin:0;
+	}
+
+	.decoration.santa{
+		display:none;
+	}
+	.decoration.logo {
+		background-image: url('assets/img/mobile-logo.png');
+		min-width: 80px;
+		min-height: 100px;
+		background-position: center 10px;
+		width: 100%;
+		left:0 !important;
+	}
+	.main{
+		padding-top:18px;
+	}
+
+	.app-title {
+		background-size: 100% auto;
+		margin-top: 82px;
+	}
+
+	.app-title img {
+		max-width: 235px;
+	}
+
+	.input-group.semi-round {
+		padding: 5px 0;
+		background: #fff;
+		border-radius: 1rem;
+	}
+
+	.form-check {
+		margin: 20px 0 10px;
+		padding: 20px 0;
+	}
+
+	.app-step-btn.text-right {
+		text-align: center !important;
+		display: block;		
+	}
+
+	.btn.btn-step {
+		width: 100%;
+		font-size: 1.5rem;
+	}
+
+	.btn-outline-green {
+		width: 100%;
+	}
+
+	.btn.btn-back {
+		text-indent: -9999em;
+	}
+
+	
+	.step::before {
+		top: 48px;
+	}
+
+	.no-form {
+		margin: 0;
+	}
+
+	.col-sm-6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.suits-bg {
+		background-position:center 100px;
+	}
+
+	.selection.select-1 {		
+		left: -20px;
+	}
+
+	.selection.select-2 {		
+		right: -16px;
+	}
+
+	.guide{
+		margin-bottom:40px;
+	}
+
+	.final-box {
+		padding: 20px 0;
+	}
+
+	.final-box .app-check-label span {		
+		font-size: 13px;		
+	}
+
+	.app-title{min-height:114px;}
+
+	.main-1 .app-title,
+	.main-5 .app-title,
+	.main-6 .app-title,
+	.main-7 .app-title
+	{
+		min-height:80px;
+	}
+	
+	.main-1 .app-title img {
+		max-width: 180px;
+	}
+
+	.main-2 .app-title img {
+		max-width: 208px;
+		margin-top: 8px !important;
+	}
+
+	.main-6 .app-title img, 
+	.main-7 .app-title img
+	{
+		max-width: 200px;
+		margin-top: 7px !important;
+	}
+	
+	.main-6 .btn-step.md {
+		max-width: 90%;
+		font-size: 26px;
+	}
+
+	.main-7 .form-check {
+		margin-top: 0;
+		padding-top: 0;	
+	}
+
+	.review-photo {
+		margin-bottom: 20px;
+	}
+
+	.btn.btn-outline-puti {
+		font-size: 1.4rem;
+	}
+
+	.section-title {
+		margin-top: 30px;
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+	}
+
+	.app-body-full {
+		margin: 0;
+		padding: 20px 0;		
+	}
+}
