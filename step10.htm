@@ -16,7 +16,7 @@
     <link href="mobile.css" rel="stylesheet">
   </head>
 
-  <body>        
+  <body class="modal-open" style="padding-right: 17px;">        
     <div class="container canvass">      
       <div class="decoration logo" style="left:1rem;"></div>      
       <!--
@@ -137,10 +137,10 @@
     </div><!-- /.container -->
 
     <!-- Modal -->
-    <div id="myModal" class="modal fade elfmodal" role="dialog">
+    <div id="myModal" class="modal fade elfmodal" role="dialog" style="display: block; opacity: 1; margin-top: 82px;">
     <div class="modal-dialog">
       <!-- Modal content-->
-      <div class="elfhead"></div>
+      <div class="elfhead" style="height:190px;"></div>
       <div class="modal-content">        
         <div class="modal-body">
           <div class="row"><div class="col modal-text"><strong>Are you sure you want to delete badge(s)?</strong></div></div>
@@ -152,22 +152,6 @@
     </div>
    
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->    
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#myModal').modal('show');
-    });
-    </script>
-
+    <div class="modal-backdrop fade show"></div>
   </body>
 </html>
