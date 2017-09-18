@@ -78,11 +78,11 @@
 	}
 
 	.selection.select-1 {		
-		left: -20px;
+		left: -5px;
 	}
 
 	.selection.select-2 {		
-		right: -16px;
+		right: 0px;
 	}
 
 	.guide{
